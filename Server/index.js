@@ -11,7 +11,9 @@ const mongoose = require('mongoose');
 
 
 //DB setup
-mongoose.connect('mongodb://localhost:auth/auth');
+//mongoose.connect('mongodb://localhost:auth/auth');
+mongoose.connect('mongodb://<peterrkang>:<saewon>@ds119788.mlab.com:19788/locals');
+
 
 //App setup boilerplate/middleware in express any incoming request is passed through
 app.use(morgan('combine'));
